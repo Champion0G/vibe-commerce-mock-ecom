@@ -28,7 +28,8 @@ router.post("/", async (req, res) => {
 // 🧮 Get full cart with total
 router.get("/", async (req, res) => {
   try {
-    const cart = await Cart.find();
+    const cart = await Cart.find({ userId: "mockUser01" });
+
 
     // Fetch product details
     const detailedCart = await Promise.all(
