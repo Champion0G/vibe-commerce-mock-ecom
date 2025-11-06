@@ -14,8 +14,7 @@ logs/
 .DS_Store
 Thumbs.db
 
-# React build output
-frontend/build
+
 
 # IDE
 .vscode/
