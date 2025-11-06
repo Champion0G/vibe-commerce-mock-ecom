@@ -77,8 +77,25 @@ export default function App() {
   };
 
   return (
-    <div style={{ padding: 20, maxWidth: 900, margin: "0 auto" }}>
-      <h1 style={{ textAlign: "center" }}>🛒 Vibe Commerce</h1>
+    <div style={{ 
+      padding: 20, 
+      maxWidth: 1200, 
+      margin: "0 auto",
+      minHeight: "100vh"
+    }}>
+      <h1 style={{ 
+        textAlign: "center", 
+        fontSize: "2.5rem",
+        fontWeight: "bold",
+        background: "linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)",
+        WebkitBackgroundClip: "text",
+        WebkitTextFillColor: "transparent",
+        backgroundClip: "text",
+        marginBottom: "10px",
+        textShadow: "0 0 30px rgba(102, 126, 234, 0.5)"
+      }}>
+        🛒 Vibe Commerce
+      </h1>
       <Products products={products} onAdd={addToCart} />
       <Cart
         cart={cart}
