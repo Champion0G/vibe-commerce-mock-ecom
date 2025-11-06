@@ -7,14 +7,12 @@ It demonstrates complete e-commerce flow — from product listing to cart manage
 
 ✅ Full Stack E-Commerce Flow
 
-Browse real products (fetched from Fake Store API
-)
-
-Add / Remove items from the cart
-
-Automatic total price calculation
-
-Mock checkout with user details and receipt generation
+- Browse real products (fetched from Fake Store API)
+- Add items to cart (quantity auto-increments for duplicate items)
+- Remove items from cart
+- View cart with items, quantities, and total price
+- Automatic total price calculation
+- Mock checkout with user details and receipt generation
 
 ✅ Bonus Enhancements
 
@@ -100,12 +98,14 @@ npm start
 Frontend runs on http://localhost:3000
 
 🔁 API Endpoints
-Method	Endpoint	Description
-GET	/api/products	Fetch all products (from Fake Store API or MongoDB)
-POST	/api/cart	Add item to cart
-GET	/api/cart	Get all cart items + total
-DELETE	/api/cart/:id	Remove item from cart
-POST	/api/checkout	Checkout and generate receipt
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/products` | Fetch all products (from Fake Store API or MongoDB) |
+| POST | `/api/cart` | Add item to cart (increments quantity if item exists) |
+| GET | `/api/cart` | Get all cart items with product details + total |
+| DELETE | `/api/cart/:id` | Remove item from cart |
+| POST | `/api/checkout` | Checkout and generate receipt |
 📸 Screenshots
 🏠 Homepage
 
@@ -113,7 +113,7 @@ Displays product grid fetched from Fake Store API.
 
 🛒 Cart
 
-Shows added products with quantities and total price.
+Shows added products with quantities and total price. Users can remove items from the cart. Quantity automatically increments when the same product is added multiple times.
 
 💳 Checkout
 
