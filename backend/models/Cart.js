@@ -1,10 +1,9 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const cartSchema = new mongoose.Schema({
-  userId: { type: String, default: "mockUser01" },
+  userId: { type: String, default: "mockUser01" }, // 👈 Add this line
   productId: String,
-  qty: Number,
+  qty: Number
 });
 
-
-export default mongoose.model('Cart', cartSchema);
+export default mongoose.model("Cart", cartSchema);
