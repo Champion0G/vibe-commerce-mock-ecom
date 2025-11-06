@@ -43,31 +43,47 @@ API	Fake Store API
 
 Styling	Inline CSS with Dark Gradient Theme & Glassmorphism
 ⚙️ Folder Structure
-/vibe-mock-ecom
-  ├── /backend
-  │     ├── server.js
-  │     ├── .env
-  │     ├── /models
-  │     │     ├── Product.js
-  │     │     └── Cart.js
-  │     ├── /routes
-  │     │     ├── products.js
-  │     │     ├── cart.js
-  │     │     └── checkout.js
-  │     ├── package.json
-  │
-  ├── /frontend
-  │     ├── /src
-  │     │     ├── App.jsx
-  │     │     ├── api.js
-  │     │     └── /components
-  │     │           ├── Products.jsx
-  │     │           ├── Cart.jsx
-  │     │           └── CheckoutModal.jsx
-  │     ├── package.json
-  │
-  ├── README.md
-  └── .gitignore
+
+```
+vibe-mock-ecom/
+├── backend/
+│   ├── models/
+│   │   ├── Cart.js
+│   │   └── Product.js
+│   ├── routes/
+│   │   ├── cart.js
+│   │   ├── checkout.js
+│   │   └── products.js
+│   ├── node_modules/
+│   ├── .env
+│   ├── package.json
+│   ├── package-lock.json
+│   └── server.js
+├── frontend/
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── Cart.jsx
+│   │   │   ├── CheckoutModal.jsx
+│   │   │   └── Products.jsx
+│   │   ├── api.js
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── index.js
+│   ├── node_modules/
+│   ├── package.json
+│   ├── package-lock.json
+│   └── README.md
+├── .gitignore
+├── README.md
+└── REQUIREMENTS_CHECKLIST.md
+```
 
 ⚙️ Setup Instructions
 🔹 1. Clone the Repository
